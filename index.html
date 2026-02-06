@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LexiCrush Daily - Word Match Rush</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Sora:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sugar-bg"></div>
+    <main class="page">
+      <header class="hero">
+        <div>
+          <p class="kicker">Daily Word Puzzle</p>
+          <h1>LexiCrush</h1>
+          <p class="subhead">
+            Swipe letters like candy, uncover the secret word like Wordle.
+          </p>
+        </div>
+        <div class="stats">
+          <div>
+            <span class="label">Score</span>
+            <span id="score">0</span>
+          </div>
+          <div>
+            <span class="label">Streak</span>
+            <span id="streak">0</span>
+          </div>
+          <div>
+            <span class="label">Best</span>
+            <span id="best">0</span>
+          </div>
+          <div>
+            <span class="label">Level</span>
+            <span id="level">1</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="ad-slot top" aria-label="Advertisement">
+        <div class="ad-card">
+          <p>Ad Space (728x90)</p>
+          <span>Replace with your ad script</span>
+        </div>
+      </section>
+
+      <section class="play-area">
+        <div class="panel">
+          <div class="target">
+            <div>
+              <span class="label">Target Word</span>
+              <p id="target-word">_ _ _ _ _</p>
+            </div>
+            <div>
+              <span class="label">Hints</span>
+              <p id="hint">0 locked, 0 sparks</p>
+            </div>
+          </div>
+          <div class="board" id="grid" aria-label="Letter board"></div>
+          <div class="hud">
+            <div>
+              <span class="label">Current Word</span>
+              <p id="current-word">---</p>
+            </div>
+            <p id="message">Drag to spell words. Submit to crush tiles.</p>
+            <div class="controls">
+              <button id="submit">Submit</button>
+              <button id="clear">Clear</button>
+              <button id="shuffle">Shuffle</button>
+            </div>
+          </div>
+        </div>
+        <aside class="sidebar">
+          <div class="ad-slot side" aria-label="Advertisement">
+            <div class="ad-card">
+              <p>Ad Space (300x600)</p>
+              <span>Replace with your ad script</span>
+            </div>
+          </div>
+          <div class="tips">
+            <h2>How to Play</h2>
+            <ul>
+              <li>Drag across adjacent letters to form words.</li>
+              <li>Valid words clear tiles and drop new letters.</li>
+              <li>Match target letters in the right spot to lock them.</li>
+              <li>Lock all spots to level up and refresh the board.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="ad-slot bottom" aria-label="Advertisement">
+        <div class="ad-card">
+          <p>Ad Space (970x90)</p>
+          <span>Replace with your ad script</span>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          Built for quick replay sessions. Update word lists and difficulty in
+          <strong>game.js</strong>.
+        </p>
+      </footer>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
